@@ -1,22 +1,115 @@
-<div class="header">
-  <div class="left">
-    <a class="button-link" href="https://cloud.ibm.com/devops">
-      <img class="bluemix-logo" src="https://cloud.ibm.com/devops/graphics/continuous-delivery.svg" />
-      <span class="devopsservices-text">IBM <span class="bluemix-text">Cloud</span> DevOps Services</span>
-    </a>
-  </div>
-  <div class="right">
-    <span class="app-title">{{title}}</span>
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">Welcome to {{title}}</h1>
+      <p class="hero-subtitle">A powerful DevOps platform built for modern development teams</p>
+      <div class="hero-buttons">
+        <a href="/docs" class="btn btn-primary">Get Started</a>
+        <a href="/applications" class="btn btn-secondary">View Applications</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-icon">
+        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 22V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M22 17L12 12L2 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 7L12 12L22 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
   </div>
 </div>
-<div class="content">
 
-  <h3>Available APIs:</h3>
-  <br />
-  <p><a href="/hello?name=joe">/hello?name=joe</a> <span class="description"><strong>GET</strong> request to /hello with a query string parameter of 'name=joe'</span></p>
-  <p><a href="/applications">/applications</a> <span class="description"><strong>GET</strong> request to /applications to get all the applications</span></p>
-  <p><a href="/applications/1234">/applications/1234</a> <span class="description"><strong>GET</strong> request to /applications/ with a path parameter of '1234' to get a specific application</span></p>
-  <br />
-  <br />
-  <p><a href="/docs">Browse the Swagger UI</a></p>
+<!-- Features Section -->
+<div class="features-section">
+  <div class="container">
+    <h2 class="section-title">Key Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Fast Deployment</h3>
+        <p>Deploy your applications quickly with our streamlined CI/CD pipeline</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Secure & Reliable</h3>
+        <p>Enterprise-grade security with 99.9% uptime guarantee</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>API Documentation</h3>
+        <p>Comprehensive API documentation with interactive examples</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- API Quick Access Section -->
+<div class="api-section">
+  <div class="container">
+    <h2 class="section-title">Quick API Access</h2>
+    <div class="api-grid">
+      <div class="api-card">
+        <div class="api-method">GET</div>
+        <div class="api-content">
+          <h4><a href="/hello?name=developer">/hello</a></h4>
+          <p>Simple greeting endpoint with name parameter</p>
+        </div>
+      </div>
+      
+      <div class="api-card">
+        <div class="api-method">GET</div>
+        <div class="api-content">
+          <h4><a href="/applications">/applications</a></h4>
+          <p>Retrieve all applications in the system</p>
+        </div>
+      </div>
+      
+      <div class="api-card">
+        <div class="api-method">GET</div>
+        <div class="api-content">
+          <h4><a href="/applications/1234">/applications/:id</a></h4>
+          <p>Get specific application by ID</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="api-cta">
+      <a href="/docs" class="btn btn-outline">Browse Full API Documentation</a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer-section">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-branding">
+        <h3>DevOps Tutorial</h3>
+        <p>Powered by IBM Cloud DevOps Services</p>
+      </div>
+      <div class="footer-links">
+        <a href="/docs">Documentation</a>
+        <a href="/applications">Applications</a>
+        <a href="https://cloud.ibm.com/devops" target="_blank">IBM Cloud</a>
+      </div>
+    </div>
+  </div>
 </div>
